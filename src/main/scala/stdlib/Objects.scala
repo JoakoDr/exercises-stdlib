@@ -38,11 +38,11 @@ object Objects extends FlatSpec with Matchers with org.scalaexercises.definition
     val x = Greeting
     val y = x
 
-    x eq y should be(res0) //Reminder: eq checks for reference
+    x eq y should be(false) //Reminder: eq checks for reference
 
     val z = Greeting
 
-    x eq z should be(res1)
+    x eq z should be(true)
   }
 
   /** An object that has the same name as a class is called a companion object of the class, and it is often used to contain factory methods for the class that it complements:
